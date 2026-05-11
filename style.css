@@ -32,18 +32,22 @@ body{
     color: orangered;
 }
 
+@media screen and (max-width: 900px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: 450px 450px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .container{
         display: grid;
-        grid-template-columns: 450px;
+        grid-template-columns: 1fr;
         grid-template-rows: 450px;
     }
 }
 
-@media screen and (min-width: 900px) {
-    .container{
-        display: grid;
-        grid-template-columns: 450px 450px;
-        grid-template-rows: 450px 450px;
-    }
-}
+
+
+
